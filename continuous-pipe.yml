@@ -28,7 +28,7 @@ pipelines:
       condition: 'not(code_reference.branch matches "/^cpdev/")'
       tasks:
           - images
-          - manual_approval: ~
+          # - manual_approval: ~
           - deployment
     - name: Remote
       condition: 'code_reference.branch matches "/^cpdev/"'
